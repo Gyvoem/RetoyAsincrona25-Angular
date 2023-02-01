@@ -1,4 +1,39 @@
-# Crud
+# Reto y Asincrónica 25
+## Trabajo Grupal
+Integrantes:
+- ARACELI PONCE SANGA
+- EDILT LUZ TORIBIO FLORES
+- MARWIN WLADIMIR GARAY MONTOYA
+- JHYM STONY HUALLA MUÑOZ
+* * *
+> El proyecto cuenta con un api creado en xamp:
+> 
+>![iNICIO](https://github.com/Gyvoem/RetoyAsincrona25-Angular/blob/master/src/assets/imagenXAMP.jpg)
+>
+> Captura SQL
+> 
+> ![iNICIO](https://github.com/Gyvoem/RetoyAsincrona25-Angular/blob/master/src/assets/SQL.jpg)
+>Link de los archivos de la api:
+>
+>https://github.com/Gyvoem/PhpApi-xamp.git
+* * *
+## Captura de página
+>>![iNICIO](https://github.com/Gyvoem/RetoyAsincrona25-Angular/blob/master/src/assets/registro.jpg.jpg)
+>>
+>> Al registrarse se puede acceder a la tabla junto con los datos brindados.
+>>
+>>![iNICIO](https://github.com/Gyvoem/RetoyAsincrona25-Angular/blob/master/src/assets/tabla.jpg.jpg)
+>>
+>> La tabla cuenta con las funcionalidades:
+>> - Agregar
+>> - Editar
+>> - Eliminar
+>> 
+>>![iNICIO](https://github.com/Gyvoem/RetoyAsincrona25-Angular/blob/master/src/assets/edita.jpg.jpg)
+>>
+>> Editar permite guardas los cambios y actulizar la tabla.
+
+* * *
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
