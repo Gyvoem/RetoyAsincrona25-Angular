@@ -1,0 +1,84 @@
+<section class="container">
+    <section class="text-center" id="titulo"><h1>REGISTRATE AQUI</h1></section>
+    <section style="width:50%;margin:auto">
+    <form [formGroup]="addForm" novalidate class="form">
+
+
+        <section class="row">
+            <section class="col my-4">
+                <section class="row">
+                    <div class="col-md-6">Nombre</div>
+                    <div class="col-md-6"><input type="text" class="form-control" name="first_name" formControlName="first_name"></div>
+                </section>
+            </section>
+            <section class="col my-4">
+                <section class="row">
+                    <section class="col-md-6">Apellido</section>
+                    <div class="col-md-6"><input class="form-control" type="text" name="last_name" formControlName="last_name"></div>
+                </section>
+            </section>
+        </section>  
+
+        <section class="row">
+            <section class="col my-4">
+                <section class="row">
+                    <section class="col-md-6">Email</section>
+                    <section class="col-md-6"><input type="text" class="form-control" name="email" formControlName="email"></section>
+                </section>
+            </section>
+            <section class="col my-4">
+                <section class="row">
+                    <section class="col-md-6">Contraseña</section>
+                    <section class="col-md-6"><input type="text" class="form-control" name="password" formControlName="password"></section>
+                </section>
+            </section>
+        </section>
+
+        <section class="row">
+            <section class="col my-4">
+                <section class="row">
+                    <section class="col-md-6">Role</section>
+                    <section class="col-md-6">
+                        <select formControlName="country" name="country" class="form-control">
+                            <option value="User">User</option>
+                            <option value="Admin">Admin</option>
+                          </select>
+                    </section>
+                </section>
+            </section>
+            <section class="col my-4">
+                <section class="row">
+                    <section class="col-md-6">Genero</section>
+                    <section class="col-md-6">
+                        Male :   <input formControlName="gender" type="radio" name="gender" value="male">
+                        Female :   <input formControlName="gender" type="radio" name="gender" value="female">
+                    </section>
+                </section>
+            </section>
+        </section>
+
+       
+        <section class="row my-4">
+            <section class="col-md-6">PASATIEMPO</section>
+            <section class="col-md-6">
+                <section *ngFor="let result of HobbyArray">
+                <input type="checkbox"  [ngModel]="result.value"
+                (ngModelChange)="result.value=$event;addForm.get('hobbyField').setValue(parse())"
+                [ngModelOptions]="{standalone:true}"
+                >{{result.name}}
+                </section>
+            </section>
+        </section>
+    
+    
+        
+    
+        <section class="text-center">
+            <section class="col-md-12">
+                <button class="btn btn-success"   (click)="onSubmit()">REGISTRAR USUARIO</button>
+            </section>
+    
+         </section>
+    </form>
+    </section>
+    </section>

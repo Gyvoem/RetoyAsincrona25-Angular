@@ -1,0 +1,30 @@
+<h1 id="titulo" class="text-center">TABLA CON LOS DATOS</h1>
+<button  class="btn btn-success" routerLink="/add-student">AGREGAR</button>
+<table class="table table-stripped table-dark">
+    <thead class="color">
+        <th>Nr. ID</th>
+        <th>NOMBRE</th>
+        <th>APELLIDO</th>
+        <th>EMAIL</th>
+        <th>CONTRASEÑA</th>
+        <th>GENERO</th>
+        <th>PASATIEMPO</th>
+        <th>Roles</th>
+        <th>ACCIONES</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let student of students; let i = index;">
+            <td>{{i+1}}</td>
+            <td>{{student.first_name}}</td>
+            <td>{{student.last_name}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.password}}</td>
+            <td>{{student.gender}}</td>
+            <td>{{student.hobbies}}</td>
+            <td>{{student.country}}</td>
+            <td><a href="edit/{{student.id}}" class="btn btn-warning">EDITAR</a> | <button (click)="deleteStudent(student)" class="btn btn-danger">ELIMINAR</button></td>
+        </tr>
+    </tbody>
+</table>
+
